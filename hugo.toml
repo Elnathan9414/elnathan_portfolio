@@ -1,5 +1,9 @@
 
-baseURL = "https://tonpseudo.github.io/mon-portfolio/"
+baseURL = "https://tonusername.github.io/"
 languageCode = "en-us"
 title = "Josue Elnathan | Data Analyst"
+
+relativeURLs = false
+canonifyURLs = true
+
 

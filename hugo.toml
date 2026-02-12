@@ -3,7 +3,7 @@ baseURL = "https://tonusername.github.io/"
 languageCode = "en-us"
 title = "Josue Elnathan | Data Analyst"
 
-relativeURLs = false
+relativeURLs = true
 canonifyURLs = true
 
 

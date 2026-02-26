@@ -6,7 +6,7 @@ tags: ["data", "portfolio"]
 categories: ["blog"]
 image: "images/blog/data.jpg"
 imageAlt: "Description image"
-summary: "In the world of data science, data is often referred to as the new oil."
+summary: "Behind a seemingly routine course survey lies an ethical paradox where the pursuit of actionable data threatens the very foundation of trust with participants."
 ---
 
 

@@ -6,4 +6,6 @@ title = "Josue Elnathan | Data Analyst"
 relativeURLs = true
 canonifyURLs = true
 
+[params]
+commentsFormAction = "https://formspree.io/f/meelagqp"
 

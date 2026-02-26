@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <title>Josue Elnathan | Data Analyst</title>
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+   
+  <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+      
+      <a href="../../" class="text-xl font-bold text-gray-800">
+        Josue Elnathan
+      </a>
+
+      
+      <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
+        <a href="../../#about" class="hover:text-blue-600 transition">About</a>
+        <a href="../../#skills" class="hover:text-blue-600 transition">Skills</a>
+        <a href="../../#projects" class="hover:text-blue-600 transition">Projects</a>
+        <a href="../../#contact" class="hover:text-blue-600 transition">Contact</a>
+        <a href="../../blog/" class="hover:text-blue-600 transition">Blog</a>
+      </div>
+
+      
+      <button id="menu-btn" class="md:hidden text-gray-800 text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+
+    </div>
+
+    
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+      <div class="flex flex-col space-y-4 px-6 py-6 text-gray-600 font-medium">
+        <a href="../../#about" class="hover:text-blue-600">About</a>
+        <a href="../../#skills" class="hover:text-blue-600">Skills</a>
+        <a href="../../#projects" class="hover:text-blue-600">Projects</a>
+        <a href="../../#contact" class="hover:text-blue-600">Contact</a>
+        <a href="../../blog/" class="hover:text-blue-600">Blog</a>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="pt-24">
+    
+<article class="py-24 bg-gray-50 min-h-screen">
+  <div class="max-w-3xl mx-auto px-6">
+    <p class="text-sm text-gray-500 mb-2">Feb 25 2026</p>
+    <h1 class="text-4xl font-bold text-gray-900 mb-8">The Anonymity Paradox: When Survey Design Breeds Distrust in Data Science</h1>
+
+    
+      <img
+        src="../../images/blog/ia1.jpg"
+        alt="Data visualization on digital screen"
+        class="w-full rounded-xl shadow-md mb-8 object-cover"
+      >
+    
+
+    <div class="prose prose-lg max-w-none blog-content">
+      <p>In the world of data science, data is often referred to as the &ldquo;new oil.&rdquo; It’s a valuable resource that, when refined correctly, can power insightful decisions, streamline operations, and illuminate paths previously hidden in the dark. But like oil, if not handled carefully, it can also create a toxic spill, one that damages an organization’s reputation and erodes the trust of the very people it serves.</p>
+<p><img src="../../images/blog/data.jpg" alt="Survey ethics and data trust"></p>
+<p>Recently, I was presented with a scenario that perfectly encapsulates the delicate ethical tightrope data professionals walk every day. An organization, eager to improve its educational offerings, deployed a course evaluation survey. The goal was noble: executive management wanted to identify which courses needed redesign or updating. However, the path to this goal was paved with good intentions that create a significant ethical quagmire. As the data analyst tasked with deriving insights from this survey, I am immediately confronted with several red flags that must be addressed before a single data point is analyzed.</p>
+<p>This post will dissect this scenario, exploring the ethical issues at play and outlining a path forward that respects both the participants and the organization&rsquo;s need for actionable data.</p>
+
+    </div>
+
+    <section class="mt-14 border-t border-gray-200 pt-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-3">Review</h2>
+      <p class="text-gray-600 mb-6">Post a comment about this article.</p>
+
+      <form
+        action='https://formspree.io/f/meelagqp'
+        method="POST"
+        class="space-y-4"
+      >
+        <input type="hidden" name="_subject" value='Nouveau commentaire - The Anonymity Paradox: When Survey Design Breeds Distrust in Data Science'>
+        <input type="hidden" name="article" value="http://localhost:1313/blog/ia_etics/">
+        <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off">
+
+        <div>
+          <label class="block text-sm text-gray-700 mb-2">Name</label>
+          <input
+            type="text"
+            name="name"
+            required
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-600"
+          >
+        </div>
+
+        <div>
+          <label class="block text-sm text-gray-700 mb-2">Email</label>
+          <input
+            type="email"
+            name="email"
+            required
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-600"
+          >
+        </div>
+
+        <div>
+          <label class="block text-sm text-gray-700 mb-2">review</label>
+          <textarea
+            name="message"
+            rows="5"
+            required
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-600"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+        >
+          Send Comment
+        </button>
+      </form>
+    </section>
+  </div>
+</article>
+<style>
+  .blog-content {
+    line-height: 1.9;
+  }
+
+  .blog-content p {
+    margin-bottom: 1rem;
+  }
+
+  .blog-content > p:first-of-type::first-letter {
+    float: left;
+    font-size: 3.6rem;
+    line-height: 0.95;
+    font-weight: 700;
+    margin: 0.15rem 0.45rem 0 0;
+    color: #1d4ed8;
+  }
+
+  .blog-content img {
+    max-width: 60%;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(6, 69, 240, 0.1);
+  }
+
+  .blog-content img:nth-of-type(odd) {
+    float: left;
+    margin: 0.35rem 1.25rem 1rem 0;
+  }
+
+  .blog-content img:nth-of-type(even) {
+    float: right;
+    margin: 0.35rem 0 1rem 1.25rem;
+  }
+
+  .blog-content::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media (max-width: 768px) {
+    .blog-content img {
+      max-width: 100%;
+      float: none;
+      display: block;
+      margin: 1.25rem 0;
+    }
+    .blog-content {
+      line-height: 1.8;
+    }
+    .blog-content p {
+      margin-bottom: 1.1rem;
+    }
+  }
+</style>
+
+  </div>
+
+  
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+<footer id="contact" class="bg-gray-900 text-gray-300 py-12">
+
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    
+    <div class="flex justify-center space-x-6 mb-6">
+
+      <a href="https://www.linkedin.com/in/elnathan-mbondo"
+         class="text-gray-400 hover:text-white text-xl transition">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/Elnathan9414"
+         class="text-gray-400 hover:text-white text-xl transition">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="mailto:mbondojsosue@gmail.com"
+         class="text-gray-400 hover:text-white text-xl transition">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+    </div>
+
+    
+    <p class="text-sm text-gray-500">
+      Â© <span id="year"></span> Josue Elnathan Mbondo. All rights reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</html>
+

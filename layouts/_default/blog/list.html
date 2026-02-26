@@ -1,0 +1,38 @@
+{{ define "main" }}
+<section class="relative py-24 min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(59,130,246,0.18),transparent_45%),radial-gradient(circle_at_85%_10%,rgba(96,165,250,0.12),transparent_40%)]"></div>
+  <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-60"></div>
+
+  <div class="relative z-10 max-w-5xl mx-auto px-6">
+    <h1 class="text-4xl font-bold text-white mb-4">{{ .Title }}</h1>
+    {{ with .Params.description }}
+      <p class="text-gray-300 mb-10">{{ . }}</p>
+    {{ end }}
+
+    <div class="grid md:grid-cols-2 gap-8">
+      {{ range .Pages.ByDate.Reverse }}
+        <article class="bg-white rounded-xl shadow border border-gray-100 overflow-hidden">
+          <a href="{{ .RelPermalink }}" class="block relative h-56">
+            {{ with .Params.image }}
+              <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="w-full h-full object-cover">
+            {{ else }}
+              <div class="w-full h-full bg-gradient-to-br from-slate-700 to-slate-900"></div>
+            {{ end }}
+            <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+            <h2 class="absolute bottom-4 left-4 right-4 text-xl font-semibold text-white leading-tight">
+              {{ .Title }}
+            </h2>
+          </a>
+          <div class="p-6">
+            <p class="text-sm text-gray-500 mb-2">{{ .Date.Format "Jan 02 2006" }}</p>
+            <p class="text-gray-600 mb-4">{{ .Summary }}</p>
+            <a href="{{ .RelPermalink }}" class="text-blue-600 font-medium hover:underline">Read More</a>
+          </div>
+        </article>
+      {{ else }}
+        <p class="text-gray-300">Aucun article pour le moment.</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

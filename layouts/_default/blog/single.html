@@ -1,0 +1,127 @@
+﻿{{ define "main" }}
+<article class="py-24 bg-gray-50 min-h-screen">
+  <div class="max-w-3xl mx-auto px-6">
+    <p class="text-sm text-gray-500 mb-2">{{ .Date.Format "Jan 02 2006" }}</p>
+    <h1 class="text-4xl font-bold text-gray-900 mb-8">{{ .Title }}</h1>
+
+    {{ with .Params.image }}
+      <img
+        src="{{ . | relURL }}"
+        alt="{{ $.Params.imageAlt | default $.Title }}"
+        class="w-full rounded-xl shadow-md mb-8 object-cover"
+      >
+    {{ end }}
+
+    <div class="prose prose-lg max-w-none blog-content">
+      {{ .Content }}
+    </div>
+
+    <section class="mt-14 border-t border-gray-200 pt-10">
+      <h2 class="text-2xl font-bold text-gray-900 mb-3">Review</h2>
+      <p class="text-gray-600 mb-6">Post a comment about this article.</p>
+
+      <form
+        action='{{ .Site.Params.commentsFormAction | default "https://formspree.io/f/meelagqp" }}'
+        method="POST"
+        class="space-y-4"
+      >
+        <input type="hidden" name="_subject" value='Nouveau commentaire - {{ .Title }}'>
+        <input type="hidden" name="article" value="{{ .Permalink }}">
+        <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off">
+
+        <div>
+          <label class="block text-sm text-gray-700 mb-2">Name</label>
+          <input
+            type="text"
+            name="name"
+            required
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-600"
+          >
+        </div>
+
+        <div>
+          <label class="block text-sm text-gray-700 mb-2">Email</label>
+          <input
+            type="email"
+            name="email"
+            required
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-600"
+          >
+        </div>
+
+        <div>
+          <label class="block text-sm text-gray-700 mb-2">review</label>
+          <textarea
+            name="message"
+            rows="5"
+            required
+            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-600"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+        >
+          Send Comment
+        </button>
+      </form>
+    </section>
+  </div>
+</article>
+<style>
+  .blog-content {
+    line-height: 1.9;
+  }
+
+  .blog-content p {
+    margin-bottom: 1rem;
+  }
+
+  .blog-content > p:first-of-type::first-letter {
+    float: left;
+    font-size: 3.6rem;
+    line-height: 0.95;
+    font-weight: 700;
+    margin: 0.15rem 0.45rem 0 0;
+    color: #1d4ed8;
+  }
+
+  .blog-content img {
+    max-width: 60%;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(6, 69, 240, 0.1);
+  }
+
+  .blog-content img:nth-of-type(odd) {
+    float: left;
+    margin: 0.35rem 1.25rem 1rem 0;
+  }
+
+  .blog-content img:nth-of-type(even) {
+    float: right;
+    margin: 0.35rem 0 1rem 1.25rem;
+  }
+
+  .blog-content::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media (max-width: 768px) {
+    .blog-content img {
+      max-width: 100%;
+      float: none;
+      display: block;
+      margin: 1.25rem 0;
+    }
+    .blog-content {
+      line-height: 1.8;
+    }
+    .blog-content p {
+      margin-bottom: 1.1rem;
+    }
+  }
+</style>
+{{ end }}

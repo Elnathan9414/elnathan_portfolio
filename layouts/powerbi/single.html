@@ -1,0 +1,48 @@
+{{ define "main" }}
+<section class="py-16 bg-gray-950 text-white min-h-screen">
+  <div class="max-w-6xl mx-auto px-6">
+    <a href="{{ "/#projects" | relURL }}"
+       class="inline-block text-blue-400 hover:underline mb-8">
+      ← Back to projects
+    </a>
+
+    <div class="mb-12">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">
+        Power BI Predictive Analytics Dashboards
+      </h1>
+      <p class="text-gray-400 max-w-3xl">
+        Full interactive reports for student performance prediction and job salary prediction.
+        These dashboards use Power BI to explore patterns, compare influencing factors, and support data-driven decisions.
+      </p>
+    </div>
+
+    <div class="space-y-12">
+      <article>
+        <h2 class="text-2xl font-semibold mb-4">
+          Student Performance Prediction
+        </h2>
+        <div class="overflow-hidden rounded-xl border border-gray-800 bg-gray-900">
+          <iframe title="student_performance"
+                  class="w-full h-[541px]"
+                  src="https://app.powerbi.com/reportEmbed?reportId=cad12089-2b02-406d-a723-6bb57e6950c9&autoAuth=true&ctid=97e3b59b-8fcf-4038-b3bf-ad9abfd56383"
+                  frameborder="0"
+                  allowFullScreen="true"></iframe>
+        </div>
+      </article>
+
+      <article>
+        <h2 class="text-2xl font-semibold mb-4">
+          Job Salary Prediction
+        </h2>
+        <div class="overflow-hidden rounded-xl border border-gray-800 bg-gray-900">
+          <iframe title="job salary prediction"
+                  class="w-full h-[541px]"
+                  src="https://app.powerbi.com/reportEmbed?reportId=d2170b5e-17aa-446e-850c-3d03de731638&autoAuth=true&ctid=97e3b59b-8fcf-4038-b3bf-ad9abfd56383"
+                  frameborder="0"
+                  allowFullScreen="true"></iframe>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -23,10 +23,24 @@
       <description>Behind a seemingly routine course survey lies an ethical paradox where the pursuit of actionable data threatens the very foundation of trust with participants.</description>
     </item>
     <item>
+      <title>Job Salary Prediction</title>
+      <link>http://localhost:1313/job-salary-prediction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/job-salary-prediction/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Power BI Predictive Analytics Dashboards</title>
       <link>http://localhost:1313/power-bi-dashboards/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/power-bi-dashboards/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Student Performance Prediction</title>
+      <link>http://localhost:1313/student-performance-prediction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/student-performance-prediction/</guid>
       <description></description>
     </item>
   </channel>
